@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andar Bahar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Andar Bahar</h1>
+        <p>Balance: <span id="balance">$1000</span></p>
+
+        <!-- Andar Bahar Table -->
+        <div class="table">
+            <div class="column">
+                <h2>Andar</h2>
+                <div class="card-row" id="andar-cards"></div>
+            </div>
+            <div class="column">
+                <h2>Bahar</h2>
+                <div class="card-row" id="bahar-cards"></div>
+            </div>
+        </div>
+
+        <!-- Full House Section -->
+        <div class="full-house">
+            <h2>Full House</h2>
+            <div class="card-row" id="full-house-cards"></div>
+        </div>
+
+        <!-- Betting Section -->
+        <div class="bet-section">
+            <label for="bet-amount">Choose Bet Amount ($): </label>
+            <input type="number" id="bet-amount" min="10" max="500" step="10" value="50">
+            <div class="bet-options">
+                <button onclick="placeBet('andar')">Bet Andar</button>
+                <button onclick="placeBet('bahar')">Bet Bahar</button>
+                <button onclick="placeBet('fullHouse')">Bet Full House</button>
+            </div>
+        </div>
+
+        <p id="result-text"></p>
+
+    <script src="game.js"></script>
+</body>
+</html>

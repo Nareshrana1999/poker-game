@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Blackjack</h1>
+
+    <!-- Game Area with Table Image -->
+    <div class="game-area">
+      <!-- Table Background -->
+      <div class="table-container">
+        <img src="images/blackjack_table.png" alt="Blackjack Table" class="table-image">
+        
+        <!-- Central Message -->
+        <div id="central-message" class="central-message"></div>
+
+        <!-- Dealer's Hand (Left Centered) -->
+        <div class="dealer">
+          <h3>Dealer's Hand</h3>
+          <div id="dealer-cards" class="cards"></div>
+          <p id="dealer-score">Score: 0</p>
+        </div>
+
+        <!-- Player's Hand (Right Centered) -->
+        <div class="player">
+          <h3>Your Hand</h3>
+          <div id="player-cards" class="cards"></div>
+          <p id="player-score">Score: 0</p>
+        </div>
+
+        <!-- Control Buttons (Hit, Stand, Double Down) -->
+        <div class="controls">
+          <button id="hit" disabled>Hit</button>
+          <button id="stand" disabled>Stand</button>
+          <button id="double" disabled>Double Down</button>
+        </div>
+
+        <!-- Betting Section -->
+        <div class="betting">
+          <label for="bet">Place your Bet: </label>
+          <input type="number" id="bet" min="1" max="1000" value="10">
+          <button id="place-bet">Place Bet</button>
+          <p id="balance">Balance: $1000</p>
+        </div>
+
+        <!-- Game Messages (Win, Loss, etc.) -->
+        <div id="game-message"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

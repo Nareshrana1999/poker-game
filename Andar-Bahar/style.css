@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.game-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #1e1e1e;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    width: 48%;
+    border: 2px solid #ffcc00;
+    padding: 10px;
+    border-radius: 10px;
+    background: #333;
+}
+
+.full-house {
+    margin-top: 20px;
+    border: 2px solid #ff4500;
+    padding: 10px;
+    border-radius: 10px;
+    background: #333;
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card {
+    width: 50px;
+    height: 70px;
+    margin: 5px;
+}
+
+.bet-section {
+    margin-top: 20px;
+}
+
+.bet-options {
+    margin-top: 10px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.new-game-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#new-game {
+    display: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#new-game:hover {
+    background: #c70039;
+}

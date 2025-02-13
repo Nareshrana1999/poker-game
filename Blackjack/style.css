@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Game Area Styling */
+.game-area {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+/* Table Container (Background Image) */
+.table-container {
+    position: relative;
+    width: 80%; /* Resize the table image to fit */
+    height: 80%;
+    margin: 0 auto;
+}
+
+.table-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Central Message (Shuffling, Winner, etc.) */
+.central-message {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+}
+
+/* Dealer's Hand (Left Centered) */
+.dealer {
+    position: absolute;
+    left: 20%;  /* Move left to start at 20% from the left */
+    top: 30%;  /* Align vertically in the center */
+    text-align: center;
+}
+
+/* Player's Hand (Right Centered) */
+.player {
+    position: absolute;
+    right: 20%;  /* Move right to start at 20% from the right */
+    top: 30%;  /* Align vertically in the center */
+    text-align: center;
+}
+
+/* Cards container */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Control Buttons */
+.controls {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Betting Section */
+.betting {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+#bet {
+    width: 80px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#game-message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: yellow;
+}

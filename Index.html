@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Game</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: #f8f8f0; /* Soft Ivory Background */
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(90deg, #FFD700, #32CD32, #007BFF, #8A2BE2);
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .game-card {
+            width: 240px; /* Reduced width */
+            height: 270px; /* Reduced height */
+            margin: 15px; /* Adjusted margin for a better fit */
+            padding: 10px; /* Reduced padding */
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hover Effect: Glow + Lift */
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Adding Glowing Background on Hover */
+        .game-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 215, 0, 0.3), rgba(50, 205, 50, 0.3), rgba(0, 123, 255, 0.3), rgba(138, 43, 226, 0.3));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .game-card:hover::before {
+            opacity: 1;
+        }
+
+        .game-card img {
+            width: 90%;
+            height: 150px; /* Reduced height of the image */
+            object-fit: contain; /* Ensures perfect fit without cropping */
+            border-radius: 10px;
+        }
+
+        .game-card h3 {
+            margin-top: 12px;
+            font-size: 20px; /* Reduced font size */
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>♠ Welcome to Poker Game Hub ♥</header>
+
+    <div class="container">
+        <a href="Blackjack/index.html">
+            <div class="game-card">
+                <img src="images/blackjack.jpg" alt="Blackjack">
+                <h3>Blackjack</h3>
+            </div>
+        </a>
+        
+        <a href="Andar-Bahar/index.html">
+            <div class="game-card">
+                <img src="images/andar-bahar.jpg" alt="Andar Bahar">
+                <h3>Andar Bahar</h3>
+            </div>
+        </a>
+        
+        <a href="teen-patti.html">
+            <div class="game-card">
+                <img src="images/teen-patti.jpg" alt="Teen Patti">
+                <h3>Teen Patti</h3>
+            </div>
+        </a>
+        
+        <a href="texas-holdem.html">
+            <div class="game-card">
+                <img src="images/texas-holdem.jpg" alt="Texas Hold'em">
+                <h3>Texas Hold'em</h3>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

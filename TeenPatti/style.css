@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6585c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.775);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #033d03;
+    margin-bottom: 20px;
+}
+
+.cards-section {
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+    display: inline-block;
+    border: 1px solid #ec0707;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #FFA500; /* Orange color */
+    color: white;              /* Text color */
+    font-size: 16px;           /* Font size */
+    padding: 10px 20px;        /* Padding around the text */
+    border: none;              /* No border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;          /* Pointer cursor on hover */
+    margin: 10px;              /* Margin around the button */
+}
+
+button:hover {
+    background-color: #2980b9; /* A lighter blue for hover effect */
+}
+
+#result-message {
+    font-size: 18px;
+    color: #e74c3c;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.balance-section {
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    width: 80%;
+    max-width: 200px;
+    margin: 10px 0;
+}
+
+.game-controls {
+    margin-top: 20px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Patti Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header with Balance -->
+        <header>
+            <h1>Teen Patti Game</h1>
+            <div class="balance-section">
+                <h3>Balance: ₹<span id="balance">1000</span></h3>
+            </div>
+        </header>
+
+        <!-- Your Cards Section -->
+        <div class="cards-section">
+            <h2>Your Cards</h2>
+            <div id="player-cards">
+                <div class="card" id="card1"></div>
+                <div class="card" id="card2"></div>
+                <div class="card" id="card3"></div>
+            </div>
+        </div>
+
+        <!-- Dealer Cards Section -->
+        <div class="cards-section">
+            <h2>Dealer's Cards</h2>
+            <div id="dealer-cards">
+                <div class="card" id="dealer-card1"></div>
+                <div class="card" id="dealer-card2"></div>
+                <div class="card" id="dealer-card3"></div>
+            </div>
+        </div>
+
+        <!-- Place Bet Section -->
+        <div class="bet-section">
+            <h3>Place Your Bet</h3>
+            <input type="number" id="bet-amount" placeholder="Enter Bet Amount" min="1" />
+            <button id="place-bet" onclick="placeBet()">Place Bet</button>
+        </div>
+
+        <!-- Result Message -->
+        <div id="result-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

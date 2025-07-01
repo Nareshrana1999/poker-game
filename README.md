@@ -1,6 +1,12 @@
+
 # Poker Game Collection
 
-This repository contains a collection of classic card games implemented in JavaScript, HTML, and CSS. Each game is self-contained in its own folder with all necessary assets and logic. The games included are:
+
+This repository contains a collection of classic card games implemented in JavaScript, HTML, and CSS. Each game is self-contained in its own folder with all necessary assets and logic.
+
+**▶️ [Play Online Instantly](https://nareshrana1999.github.io/poker-game/)**
+
+The games included are:
 
 - **Blackjack**
 - **Teen Patti**
